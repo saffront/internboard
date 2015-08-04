@@ -5,6 +5,7 @@
 				= image_tag @pin.image.url
 			.panel-body
 				%h1= @pin.title
+				%p.location
 				%p.description= @pin.description
 			.panel-footer
 				.row
@@ -19,4 +20,4 @@
 								= @pin.get_upvotes.size
 							- if user_signed_in?
 								= link_to "Edit", edit_pin_path, class: "btn btn-default"
-								= link_to "Delete", pin_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default"
+								= link_to "Delete", pin_path, { method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default" }

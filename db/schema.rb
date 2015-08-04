@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20140923230324) do
   create_table "pins", force: true do |t|
     t.string   "title"
     t.text     "description"
+    t.text     "location"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
