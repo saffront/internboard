@@ -84,9 +84,9 @@ Rails.application.configure do
   config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {
-      :bucket => ENV['AWS_BUCKET'],
-      :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
-      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+      :bucket => ENV['hyveplus-production'],
+      :access_key_id => ENV['AKIAJ27EPOLCDZEABACA'],
+      :secret_access_key => ENV['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']
     }
   }
 end
