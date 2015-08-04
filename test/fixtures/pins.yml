@@ -2,11 +2,9 @@
 
 one:
   title: MyString
-  location: MyText	
   description: MyText
 
 
 two:
   title: MyString
-  location: MyText
   description: MyText
